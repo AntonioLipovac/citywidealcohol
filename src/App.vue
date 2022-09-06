@@ -1,10 +1,57 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img
+          src="@/assets/citylogo.png"
+          width="150"
+          height="80"
+          class="d-inline-block align-top"
+          alt=""
+          loading="lazy"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarToggler"
+        aria-controls="navbarToggler"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <router-link to="/" class="nav-link">Novo u ponudi</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/login" class="nav-link"
+              >Jaka alkoholna pića
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/signup" class="nav-link"
+              >Prijavite se</router-link
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+      </div>
+    </nav>
+
+    <div class="conainer">
+      <router-view />
     </div>
-    <router-view/>
   </div>
 </template>
 
@@ -19,13 +66,14 @@
 
 #nav {
   padding: 30px;
+  background-color: rgb(255, 255, 255) !important;
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #3a964f;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #000000;
     }
   }
 }
