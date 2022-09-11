@@ -29,12 +29,12 @@
           </li>
           <li class="nav-item">
             <router-link to="/login" class="nav-link"
-              >Jaka alkoholna pića
+              >Login
             </router-link>
           </li>
           <li class="nav-item">
             <router-link to="/signup" class="nav-link"
-              >Prijavite se</router-link
+              >Signup</router-link
             >
           </li>
         </ul>
