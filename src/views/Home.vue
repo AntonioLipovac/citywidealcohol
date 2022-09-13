@@ -1,7 +1,8 @@
 <template>
   <div class="home">
   
-    <HelloWorld msg="Dobrodošli"/>
+    <HelloWorld msg=""/>
+   
   </div>
 </template>
 
@@ -14,5 +15,6 @@ export default {
   components: {
     HelloWorld
   }
-}
+  }
+
 </script>
