@@ -1,16 +1,15 @@
 <template>
   <div class="row">
   <div class="col-1"></div>
-  <div class="col-8">
+  <div class="col-10">
     <div class="card">
-  <h5 class="card-header">Featured</h5>
+  <h5 class="card-header">Citywide Alcohol</h5>
   <div class="card-body p-0">
-    <img class="card-img-top" src="" 
+   
   </div>
 </div>
   </div>
-  <div class="col-2">
-  ... ovdje ide desni stupac!
+  <div class="col-0.5">
   </div>
   </div>
  </template>
