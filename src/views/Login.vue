@@ -10,6 +10,7 @@
                 <label for="exampleInputEmail1">Email address</label>
                 <input
                   type="email"
+                  v-model="username"
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
@@ -23,12 +24,13 @@
                 <label for="exampleInputPassword1">Password</label>
                 <input
                   type="password"
+                  v-model="password"
                   class="form-control"
                   id="exampleInputPassword1"
                   placeholder="Enter Password"
                 />
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="button" @click= "login()" class="btn btn-primary">Submit</button>
             </form>
           </div>
           <div class="col-sm"></div>
@@ -36,3 +38,29 @@
       </div>
     </div>
   </template>
+
+  <script>
+
+    export default {
+      name:'login',
+      data () { 
+      return {
+    username: "",
+    password: "",
+      }
+    },
+      methods:{
+        login (){
+          console.log('login...');
+
+          firebase.auth().signInWithEmailAndPassword(this.username, this.password).then(function(result) {
+            console.log('Uspješna prijava', result);
+         
+          })
+          .catch(function(e) {
+            console.error('Greška', e);
+          });
+        },
+      },
+    };
+  </script>

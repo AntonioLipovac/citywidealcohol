@@ -10,6 +10,7 @@
                 <label for="exampleInputEmail1">Email</label>
                 <input
                   type="email"
+                  v-model="username"
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
@@ -23,6 +24,7 @@
                 <label for="exampleInputPassword1">Lozinka</label>
                 <input
                   type="password"
+                  v-model="password"
                   class="form-control"
                   id="exampleInputPassword1"
                   placeholder="Unesite lozinku "
@@ -32,61 +34,43 @@
                 <label for="exampleInputPassword1">Ponovite lozinku</label>
                 <input
                   type="password"
+                  v-model="passwordrepeat"
                   class="form-control"
                   id="exampleInputPassword1"
                   placeholder="Ponovite lozinku"
                 />
               </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Ime</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                  placeholder="Unesite ime"
-                />
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Prezime</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                  placeholder="Unesite prezime"
-                />
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Datum rođenja</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                  placeholder="Unesite datum rođenja"
-                />
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Grad</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                  placeholder="Unesite grad"
-                />
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Adresa</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                  placeholder="Unesite adresu"
-                />
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="button" @click="signup" class="btn btn-primary">Submit</button>
             </form>
           </div>
-          <div class="col-sm"></div>
+          <div class="col"></div>
         </div>
       </div>
     </div>
   </template>
+<script>
+import { firebase } from '@/firebase';
+export default {
+  name: 'Signup',
+  data() {
+  return {
+    username: '',
+    password: '',
+    passwordrepeat: '',
+  };
+},
+methods: {
+  signup() {
+    firebase.auth().createUserWithEmailAndPassword(this.username, this.password).then(
+      function () {
+        console.log('Uspješna registracija');
+      })
+      .catch(function(error){
+        console.error('Došlo je do greške', error);
+      });
+    console.log('Nastavak');
+    
+  },
+},
+};
+</script>
