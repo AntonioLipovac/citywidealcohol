@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <section class="image">
-      <div class="image__bg" style="background-image: url('https://photos.app.goo.gl/gG1jRpEMXDHQsVVd9');"></div>
+      <div class="image__bg" style="background-image: url('https://lh3.googleusercontent.com/pw/AL9nZEUBLzWz2AS7d2BlFaL59MXAFfJXw4gXA-4VFVr9HB-tWpx7j_k4UkJEIl00PAKUUVsenCxJuVUHvKGew6oKWjx20u5ZBzaYTWbQqGrOzmzoH2RX4zl0KGqrF8Yh0BuYk75pO8Z5YgIzNrx6tF555Do=w1093-h428-no?authuser=0');"></div>
     </section>
   </div>
 </template>
@@ -21,7 +21,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 h3 {
-  margin: 40px 0 0;
+  margin: 30px 0 0;
 }
 ul {
   list-style-type: none;
@@ -29,7 +29,7 @@ ul {
 }
 li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 a {
   color: #213850;
@@ -38,7 +38,7 @@ a {
 .image {
   position: relative;
   
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   
   &__bg {
