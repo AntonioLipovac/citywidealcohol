@@ -55,7 +55,15 @@
                   placeholder="Unesite prezime"
                 />
               </div>
-
+              <div class="form-group">
+                <label for="exampleInputPassword1">Datum rođenja</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Unesite datum rođenja"
+                />
+              </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Grad</label>
                 <input

@@ -1,15 +1,8 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-    
-    </p>
-  
-  
-  
-   
-   
-    
+    <section class="image">
+      <div class="image__bg" style="background-image: url('https://photos.app.goo.gl/gG1jRpEMXDHQsVVd9');"></div>
+    </section>
   </div>
 </template>
 
@@ -20,7 +13,10 @@ export default {
     msg: String
   }
 }
+
+
 </script>
+
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
@@ -36,6 +32,29 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: #213850;
 }
+
+.image {
+  position: relative;
+  
+  height: 100vh;
+  width: 100%;
+  
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    height: 100%;
+    width: 100%;
+
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+}
+
 </style>
