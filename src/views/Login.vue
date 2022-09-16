@@ -53,9 +53,9 @@
         login (){
           console.log('login...');
 
-          firebase.auth().signInWithEmailAndPassword(this.username, this.password).then(function(result) {
+          firebase.auth().signInWithEmailAndPassword(this.username, this.password).then((result) => {
             console.log('Uspješna prijava', result);
-         
+           this.$router.replace({name:'home'});
           })
           .catch(function(e) {
             console.error('Greška', e);
