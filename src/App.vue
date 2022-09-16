@@ -38,10 +38,13 @@
             >
           </li>
         </ul>
-      
+        <form class="d-flex" role="search">
+        <input v-model="store.searchTerm" class="form-control me-2" type="search" placeholder="Pretraga" aria-label="">
+        <button class="btn btn-outline-success" type="submit">Pretraga</button>
+      </form>
       </div>
     </nav>
-
+{{store.searchTerm}}
     <div class="conainer">
       <router-view />
     </div>
@@ -49,13 +52,34 @@
 </template>
 
 <script>
-export default{
+import store from"@/store";
+import { firebase } from "@/firebase";
+
+firebase.auth().onAuthStateChanged((user) => {
+  firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+ // User is signed in.
+ console.log("*** User", user.email);
+ store.currentUser = user.email;
+ } 
+ else {
+ // User is not signed in.
+ console.log('*** No user');
+ if (router.name !== 'login') {
+ router.push({ name: 'login' });
+ };
+};
+});
+});
+
+
+export default {
   name:'app',
   data(){
     return {
-    searchText:""
-  }
-  }
+      store,
+    };
+  },
 };
 </script>
 
