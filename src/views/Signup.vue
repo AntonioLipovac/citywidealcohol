@@ -48,29 +48,38 @@
       </div>
     </div>
   </template>
+
 <script>
-import { firebase } from '@/firebase';
-export default {
-  name: 'Signup',
-  data() {
-  return {
-    username: '',
-    password: '',
-    passwordrepeat: '',
+  import { auth, createUserWithEmailAndPassword } from "@/firebase";
+  export default {
+    name: "Signup",
+    data() {
+      return {
+        username: "",
+        password: "",
+        repeatpassword: "",
+      };
+    },
+    methods: {
+      Signup() {
+        if (this.password==this.repeatpassword) {
+          createUserWithEmailAndPassword(auth, this.email, this.password)
+          .then((userCredential) => {
+            const user = userCredential.user;
+            alert('Registrirani ste! :)')
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            // ..
+          }); 
+        }
+        else {
+          this.password='';
+          this.repeatpassword='';
+         console.log('n')}
+  
+      },
+    },
   };
-},
-methods: {
-  signup() {
-    firebase.auth().createUserWithEmailAndPassword(this.username, this.password).then(
-      function () {
-        console.log('Uspješna registracija');
-      })
-      .catch(function(error){
-        console.error('Došlo je do greške', error);
-      });
-    console.log('Nastavak');
-    
-  },
-},
-};
-</script>
+  </script>

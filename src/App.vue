@@ -28,6 +28,11 @@
             <router-link to="/" class="nav-link">Home</router-link>
           </li>
           <li class="nav-item">
+            <router-link to="/pivo" class="nav-link"
+              >Pivo</router-link
+            >
+          </li>
+          <li class="nav-item">
             <router-link to="/login" class="nav-link"
               >Login
             </router-link>
@@ -50,7 +55,7 @@
     </div>
   </div>
 </template>
-
+<!--
 <script>
 import store from"@/store";
 import { firebase } from "@/firebase";
@@ -58,12 +63,12 @@ import { firebase } from "@/firebase";
 firebase.auth().onAuthStateChanged((user) => {
   firebase.auth().onAuthStateChanged((user) => {
   if (user) {
- // User is signed in.
+ 
  console.log("*** User", user.email);
  store.currentUser = user.email;
  } 
  else {
- // User is not signed in.
+
  console.log('*** No user');
  if (router.name !== 'login') {
  router.push({ name: 'login' });
@@ -82,7 +87,7 @@ export default {
   },
 };
 </script>
-
+-->
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
