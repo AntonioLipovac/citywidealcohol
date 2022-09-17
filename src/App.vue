@@ -33,27 +33,18 @@
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/pivo" class="nav-link"
-              >Pivo
-            </router-link>
+            <router-link to="/pivo" class="nav-link">Pivo </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/vino" class="nav-link"
-              >Vino
-            </router-link>
+            <router-link to="/vino" class="nav-link">Vino </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/login" class="nav-link"
-              >Login
-            </router-link>
+            <router-link to="/login" class="nav-link">Login </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/signup" class="nav-link"
-              >Signup</router-link
-            >
+            <router-link to="/signup" class="nav-link">Signup</router-link>
           </li>
         </ul>
-      
       </div>
     </nav>
 
@@ -62,8 +53,6 @@
     </div>
   </div>
 </template>
-
-
 
 <style lang="scss">
 #app {
@@ -76,7 +65,7 @@
 
 #nav {
   padding: 30px;
-  background-color: rgb(255, 255, 255) !important;
+  background-color: rgb(211, 211, 211) !important;
 
   a {
     font-weight: bold;
