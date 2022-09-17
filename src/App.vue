@@ -55,7 +55,7 @@
     </div>
   </div>
 </template>
-<!--
+
 <script>
 import store from"@/store";
 import { firebase } from "@/firebase";
