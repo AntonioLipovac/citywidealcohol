@@ -28,9 +28,19 @@
             <router-link to="/" class="nav-link">Home</router-link>
           </li>
           <li class="nav-item">
+            <router-link to="/jakaalkoholnapića" class="nav-link"
+              >Jaka alkoholna pića
+            </router-link>
+          </li>
+          <li class="nav-item">
             <router-link to="/pivo" class="nav-link"
-              >Pivo</router-link
-            >
+              >Pivo
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/vino" class="nav-link"
+              >Vino
+            </router-link>
           </li>
           <li class="nav-item">
             <router-link to="/login" class="nav-link"
@@ -43,51 +53,18 @@
             >
           </li>
         </ul>
-        <form class="d-flex" role="search">
-        <input v-model="store.searchTerm" class="form-control me-2" type="search" placeholder="Pretraga" aria-label="">
-        <button class="btn btn-outline-success" type="submit">Pretraga</button>
-      </form>
+      
       </div>
     </nav>
-{{store.searchTerm}}
+
     <div class="conainer">
       <router-view />
     </div>
   </div>
 </template>
 
-<script>
-import store from"@/store";
-import { firebase } from "@/firebase";
-
-firebase.auth().onAuthStateChanged((user) => {
-  firebase.auth().onAuthStateChanged((user) => {
-  if (user) {
- 
- console.log("*** User", user.email);
- store.currentUser = user.email;
- } 
- else {
-
- console.log('*** No user');
- if (router.name !== 'login') {
- router.push({ name: 'login' });
- };
-};
-});
-});
 
 
-export default {
-  name:'app',
-  data(){
-    return {
-      store,
-    };
-  },
-};
-</script>
--->
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

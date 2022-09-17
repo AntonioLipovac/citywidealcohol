@@ -11,11 +11,6 @@
 
     export default{
       name:'Home',
-      data:function(){
-        return{
-        store,
-      };
-    },
       components: {
         HelloWorld
       }
