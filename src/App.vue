@@ -65,7 +65,7 @@
 
 #nav {
   padding: 30px;
-  background-color: rgb(211, 211, 211) !important;
+  background-color: white !important;
 
   a {
     font-weight: bold;
