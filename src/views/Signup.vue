@@ -40,7 +40,14 @@
                 placeholder="Ponovite lozinku"
               />
             </div>
-            <button type="button" onsubmit="return false" @click="Signup" class="btn btn-primary">Submit</button>
+            <button
+              type="button"
+              onsubmit="return false"
+              @click="Signup"
+              class="btn btn-primary"
+            >
+              Submit
+            </button>
           </form>
         </div>
         <div class="col"></div>
@@ -61,23 +68,22 @@ export default {
   },
   methods: {
     Signup() {
-      if (this.password==this.repeatpassword) {
+      if (this.password == this.repeatpassword) {
         createUserWithEmailAndPassword(auth, this.email, this.password)
-        .then((userCredential) => {
-          const user = userCredential.user;
-          alert('Registrirani ste!')
-        })
-        .catch((error) => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
-          // ..
-        }); 
+          .then((userCredential) => {
+            const user = userCredential.user;
+            alert("Registrirani ste!");
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            // ..
+          });
+      } else {
+        this.password = "";
+        this.repeatpassword = "";
+        console.log("n");
       }
-      else {
-        this.password='';
-        this.repeatpassword='';
-       console.log('n')}
-
     },
   },
 };
