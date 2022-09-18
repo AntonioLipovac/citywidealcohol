@@ -30,8 +30,7 @@
             <button
               type="button"
               @click="prijava"
-              class="btn btn-primary btn-block"
-            >
+              class="btn btn-primary btn-block">
               Submit
             </button>
             <div class="form-footer">
@@ -44,7 +43,6 @@
 </div>
 </div>
 </template>
-
 
 <script>
 import { auth, signInWithEmailAndPassword } from "@/firebase";
