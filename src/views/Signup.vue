@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is an signup page</h1>
+    <h2 class>Registracija</h2>
     <div class="container">
       <div class="row">
         <div class="col-sm"></div>
@@ -10,7 +10,7 @@
               <label for="exampleInputEmail1">Email</label>
               <input
                 type="email"
-                v-model="username"
+                v-model="email"
                 class="form-control"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
@@ -61,7 +61,7 @@ export default {
   name: "Signup",
   data() {
     return {
-      username: "",
+      email: "",
       password: "",
       repeatpassword: "",
     };
