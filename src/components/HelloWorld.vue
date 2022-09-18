@@ -12,7 +12,7 @@
     <div class="row welcome text-center">
       <div class="col-12">
         <a name="onama">
-          <h1 class="display-4">Širok Izbor Pića</h1>
+          <h1 class="display-4">Širok izbor pića</h1>
         </a>
         <hr />
         <div class="col-12">
@@ -24,18 +24,22 @@
       <div class="row text-center padding">
         <div class="col-xs-12 col-sm-6 col-md-4">
           <img src="@/assets/pivo.png" width="200px" height="=200px" />
-
-          <p>Pivo</p>
+          <div class="form-footer">
+              <p><a href="Pivo">Pivo</a></p>
+            </div>
         </div>
+
         <div class="col-xs-12 col-sm-6 col-md-4">
           <img src="@/assets/vino.png" width="200px" height="=200px" />
-
-          <p>Vino</p>
+          <div class="form-footer">
+              <p><a href="Vino">Vino</a></p>
+            </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4">
           <img src="@/assets/zestica.png" width="200px" height="=200px" />
-
-          <p>Žestoka pića</p>
+          <div class="form-footer">
+              <p><a href="Jaka alkoholna pića">Jaka alkoholna pića</a></p>
+            </div>
         </div>
       </div>
       <hr class="my-4" />

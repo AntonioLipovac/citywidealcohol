@@ -40,6 +40,33 @@
                 placeholder="Ponovite lozinku"
               />
             </div>
+            <div class="form-group">
+              <label for="text">Ime</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Unesite vaše ime"
+                v-model="ime"
+              />
+            </div>
+            <div class="form-group">
+              <label for="text">Prezime</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Unesite prezime"
+                v-model="prezime"
+              />
+            </div>
+            <div class="form-group">
+              <label for="number">Godine</label>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Unesite koliko imate godina"
+                v-model="godine"
+              />
+            </div>
             <button
               type="button"
               onsubmit="return false"
@@ -64,6 +91,9 @@ export default {
       email: "",
       password: "",
       repeatpassword: "",
+      ime: "",
+      prezime: "",
+      godine: "", 
     };
   },
   methods: {
