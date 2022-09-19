@@ -2,6 +2,9 @@
     <div class="vino">
         <div class="container co">
     <h2>Vino</h2>
+    <p>
+        Alkoholno piće najčešće dobiveno od ploda biljke vinove loze.
+    </p>
     </div>
    </div>
 </template>
@@ -27,4 +30,4 @@
     .co{
       width: 40%;
     }
-    </style>
+</style>

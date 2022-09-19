@@ -2,8 +2,12 @@
     <div class="pivo">
         <div class="container co">
     <h2>Pivo</h2>
+    <p>
+        Pjenušavo alkoholno piće karakteristična gorka okusa i arome po hmelju.
+    </p>
   </div>
   </div>
+  
 </template>
 
 <style>
@@ -27,4 +31,4 @@
     .co{
       width: 40%;
     }
-    </style>
+</style>

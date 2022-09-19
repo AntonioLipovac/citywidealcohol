@@ -47,6 +47,9 @@
           <li class="nav-item">
             <router-link to="/signup" class="nav-link">Signup</router-link>
           </li>
+          <li class="nav-item">
+            <router-link to="/admin" class="nav-link">Admin</router-link>
+          </li>
         </ul>
       </div>
     </nav>

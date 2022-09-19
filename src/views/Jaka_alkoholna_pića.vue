@@ -1,6 +1,37 @@
 <template>
+  <div class="jap">
+      <div class="container co">
+  <h2>Jaka alkoholna pića</h2>
+</div>
+</div>
+
+</template>
+
+<style>
+  .jap{
+    background-color: #148233 ;
+    padding: 10%;
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .jap h2 {
+    color: rgb(255, 255, 255);
+  }
+  
+  .jap p {
+    color: rgb(255, 255, 255);
+    text-align: justify;
+  }
+  
+  .co{
+    width: 40%;
+  }
+  </style>
+<!--  
   <div class="about">
-    !-- Modal -->
+    !-- Modal 
     <div
       class="modal fade"
       id="exampleModal"
@@ -34,4 +65,5 @@
       </div>
     </div>
   </div>
-</template>
+-->
+
