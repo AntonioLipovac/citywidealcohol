@@ -1,11 +1,15 @@
 <template>
     <div class="pivo">
         <div class="container co">
-    <h2>Pivo</h2>
+         <h2>Pivo</h2>
     <p>
         Pjenušavo alkoholno piće karakteristična gorka okusa i arome po hmelju.
     </p>
   </div>
+  <div class="col-sm">
+          <img src="@/assets/beer.png" alt="Lights" style="width:32%">
+      </div>
+
   </div>
   
 </template>

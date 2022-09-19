@@ -2,15 +2,21 @@
   <div class="on">
     <div class="container co">
     <h2>O nama</h2>
-    <br><br><br>
+    <br>
     <p>Citywide Alcohol je nova putpuno besplatna aplikacija za narudžbu alkoholnih pića. 
-<br><br>
+<br>
     Izabrali smo najbolje prizvode za vas. Kupujte s nama te uživajte uz svaku čašu našeg proizvoda.
 <br><br>
-     Kontakt broj: 0996599353
-     <br><br>
+</p>
+<div class="col-sm">
+          <img src="@/assets/pića.png" alt="Lights" style="width:85%">
+      </div>
+<p>
+  <br>
+  Kontakt broj: 0996599353
+     <br>
      Mail: citywidealcohol@gmail.com
-     <br><br>
+     <br>
      Dostupnost: 0-24
 <br><br>
     </p>
@@ -21,7 +27,7 @@
 <style>
   .on{
     background-color: #148233 ;
-    padding: 10%;
+    padding: 4%;
     margin: 0%;
     width: 100%;
     height: 100%;

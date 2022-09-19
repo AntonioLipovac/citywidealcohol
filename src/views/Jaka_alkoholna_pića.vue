@@ -3,6 +3,9 @@
       <div class="container co">
   <h2>Jaka alkoholna pića</h2>
 </div>
+<div class="col-sm">
+          <img src="@/assets/jap.png" alt="Lights" style="width:25%">
+      </div>
 </div>
 
 </template>

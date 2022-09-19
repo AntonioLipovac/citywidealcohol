@@ -3,9 +3,12 @@
         <div class="container co">
     <h2>Vino</h2>
     <p>
-        Alkoholno piće najčešće dobiveno od ploda biljke vinove loze.
+        Jedno od najstarijih alkoholnih pića najčešće dobiveno od ploda biljke vinove loze.
     </p>
     </div>
+    <div class="col-sm">
+          <img src="@/assets/wine.png" alt="Lights" style="width:30%">
+      </div>
    </div>
 </template>
 
