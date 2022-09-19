@@ -39,6 +39,9 @@
             <router-link to="/vino" class="nav-link">Vino </router-link>
           </li>
           <li class="nav-item">
+            <router-link to="/onama" class="nav-link">O nama</router-link>
+          </li>
+          <li class="nav-item">
             <router-link to="/login" class="nav-link">Login </router-link>
           </li>
           <li class="nav-item">
@@ -51,48 +54,7 @@
     <div class="conainer">
       <router-view />
     </div>
-    <!-- <footer>
-      <div id="footer" class="container-fluid padding">
-        <div class="row text-center">
-          <div class="col-md-4">
-            <hr class="light" />
-            <a name="kontakt" href="index.html"
-              ><img height="75" width="120" src="@/assets/citylogo.png"
-            /></a>
-
-            ¸
-            <p>Kontakt broj: 0996599353</p>
-            <p>
-              Pošaljite upit na
-              <a href="mailto:citywidealcohol@gmail.com"
-                >citywidealcohol@gmail.com</a
-              >.
-            </p>
-            <p>Zagrebačka 15</p>
-            <p>Zagreb</p>
-          </div>
-          <div class="col-md-4">
-            <hr class="light" />
-            <h5>Radno vrijeme</h5>
-            <hr class="light" />
-            <p>Pon-Petak: 9:00 - 20:00</p>
-            <p>Sub-Ned: 9:00 - 13:00</p>
-          </div>
-
-          <div class="col-md-4">
-            <hr class="light" />
-            <h5>Demo verzija</h5>
-            <hr class="light" />
-            <p>Web aplikacija izrađena za školski projekt</p>
-          </div>
-
-          <div class="col-12">
-            <hr class="light" />
-            <h5>&copy; CitywideAlcohol.com</h5>
-          </div>
-        </div>
-      </div>
-    </footer>-->
+    
   </div>
 </template>
 

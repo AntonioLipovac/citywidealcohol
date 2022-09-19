@@ -12,11 +12,11 @@
     <div class="row welcome text-center">
       <div class="col-12">
         <a name="onama">
-          <h1 class="display-4">Širok izbor pića</h1>
+          <h1 class="display-4">Izbor pića</h1>
         </a>
         <hr />
         <div class="col-12">
-          <p class="lead">Ponuda pića koju nudimo ove sezone</p>
+          <p class="lead">Ponuda pića koju nudimo za Vas</p>
         </div>
       </div>
     </div>

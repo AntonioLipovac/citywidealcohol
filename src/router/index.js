@@ -55,6 +55,15 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Vino.vue"),
   },
+  {
+    path: "/onama",
+    name: "Onama",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Onama.vue"),
+  },
 ];
 
 const router = new VueRouter({

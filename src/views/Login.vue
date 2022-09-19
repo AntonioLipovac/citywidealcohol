@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="login">
     <h2 class>Prijava</h2>
     <div class="container">
       <div class="row">
@@ -61,7 +61,7 @@ export default {
           const user = userCredential.user;
           console.log(user);
             if(user){
-                  this.$router.replace({name:'Prijavljen'})
+                  this.$router.replace({name:'Home'})
             }
 
             return user;

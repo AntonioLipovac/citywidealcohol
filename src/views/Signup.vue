@@ -71,7 +71,7 @@
               type="button"
               onsubmit="return false"
               @click="Signup"
-              class="btn btn-primary"
+              class="btn btn-primary btn-block"
             >
               Submit
             </button>
@@ -98,21 +98,25 @@ export default {
   },
   methods: {
     Signup() {
-      if (this.password == this.repeatpassword) {
+      if (this.password==this.repeatpassword) {
         createUserWithEmailAndPassword(auth, this.email, this.password)
           .then((userCredential) => {
             const user = userCredential.user;
-            alert("Registrirani ste!");
-          })
+            console.log(user);
+            if(user){
+                  this.$router.replace({name:'Home'})
+            }
+
+            return user;
+        })
           .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
-            // ..
           });
       } else {
-        this.password = "";
-        this.repeatpassword = "";
-        console.log("n");
+        this.password = '';
+        this.repeatpassword = '';
+        console.log('n');
       }
     },
   },
